@@ -1,0 +1,53 @@
+NOTICE
+======
+
+This repository includes work derived from a third-party open-source project.
+The original copyright notice is retained below as required by the MIT License.
+
+--------------------------------------------------------------------------------
+Component: first-customer-finder
+--------------------------------------------------------------------------------
+
+Based on:        codex-first-customer-finder-skill
+Original author: Francesco Mistero (Kappaemme)
+Source:          https://github.com/Kappaemme-git/codex-first-customer-finder-skill
+Original license: MIT
+
+Adapted for the Russian-speaking (RU) market and ported to Claude Code by
+Startend (https://startend.ru).
+
+Summary of Startend's changes:
+- Ported from a Codex skill to the Claude Code skill / plugin format.
+- RU source map (vc.ru, Habr, Telegram, VK, Пикабу, hh.ru, отзовики,
+  2ГИС/Яндекс.Карты, WB/Ozon) prioritised over global platforms.
+- Russian-language query buckets instead of translated English.
+- Import-substitution (импортозамещение) added as a primary RU timing trigger.
+- 152-ФЗ-aligned privacy guidance.
+- Russian outreach channels and house-style tone (на «Вы», без давления).
+- Russian-language HTML report by default, with a `lang: en` toggle.
+
+--------------------------------------------------------------------------------
+Original MIT License
+--------------------------------------------------------------------------------
+
+MIT License
+
+Copyright (c) 2026 Francesco Mistero
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.

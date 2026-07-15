@@ -81,7 +81,7 @@ product-engineer-skills/
 | Первый скоуп | Growth / customer discovery как первый кит под зонтом, а не отдельный узкий репо |
 | Механизм раздачи | Гибрид: нативный плагин-маркетплейс (основной) + npx-установщик (сырой терминал + кросс-харнесс Codex) |
 | Гранулярность | 1 плагин = 1 навык (каждый ставится своей командой); киты — через `kits.json` в установщике |
-| Флагман | `first-customer-finder` (портирован из Codex-скилла Kappaemme, адаптирован под Claude Code) |
+| Флагман | `first-customer-finder` — основан на MIT-скилле Francesco Mistero (Kappaemme), портирован на Claude Code и адаптирован под РУ (см. [NOTICE](NOTICE)) |
 
 ---
 
@@ -89,6 +89,10 @@ product-engineer-skills/
 
 Собрано в [Startend](https://startend.ru) — интенсиве, где продакты, фаундеры и маркетологи учатся собирать рабочие MVP на Claude Code без разработчиков. Эти навыки — то, что умеет выпускник. Хочешь научиться делать такое сам — приходи на интенсив.
 
+## Атрибуция
+
+Навык **first-customer-finder** основан на open-source скилле [`codex-first-customer-finder-skill`](https://github.com/Kappaemme-git/codex-first-customer-finder-skill) (MIT) авторства **Francesco Mistero ([@Kappaemme1926](https://x.com/Kappaemme1926))**. Startend портировал его на формат Claude Code и адаптировал под русскоязычный рынок (РУ-источники, импортозамещение, 152-ФЗ, русский отчёт). Копирайт оригинала сохранён — детали и полный список изменений в [NOTICE](NOTICE).
+
 ## Лицензия
 
-[MIT](LICENSE)
+[MIT](LICENSE) — двойной копирайт (оригинал Francesco Mistero + РУ-адаптация Startend).
