@@ -12,8 +12,11 @@ Return a clickable absolute file link so the user can open the report. Keep the 
 
 ## JSON schema
 
+The report renders in Russian by default. Add `"lang": "en"` to render the report chrome in English. Content fields (verdict, prospects, patterns, openers) are shown verbatim — write them in the language you want the reader to see.
+
 ```json
 {
+  "lang": "ru",
   "title": "First Customer Finder",
   "product": "Example product",
   "product_url": "https://example.com",

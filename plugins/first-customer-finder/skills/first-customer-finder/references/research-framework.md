@@ -2,6 +2,8 @@
 
 Use this framework to keep prospect research evidence-based, current, and respectful.
 
+**RU-first by default.** This skill is tuned for the Russian-speaking market (Russia + CIS, Russian language). Search Russian sources and Russian-language signals first. Widen to global sources (Reddit, X, LinkedIn, ProductHunt, G2) only when the product clearly targets a non-RU audience.
+
 ## Research sequence
 
 ### Product brief
@@ -13,35 +15,48 @@ Define:
 - urgent job to be done
 - current alternative or workaround
 - likely adoption trigger
-- geography or language constraint
+- geography or language constraint — **assume RU unless the product clearly targets another market**
 - clear disqualifiers
 
 Do not begin broad lead collection until this brief is specific enough to reject weak matches.
 
 ### Query buckets
 
-Search several buckets rather than repeating one query:
+Search several buckets rather than repeating one query. Adapt wording to the audience's language — for RU, use natural Russian phrasings, not translated English.
 
-1. **Explicit demand:** “looking for,” “recommend a tool,” “alternative to,” “does anything exist.”
-2. **Pain:** “takes hours,” “manual,” “frustrating,” “hate,” “difficult,” “keeps breaking.”
-3. **Workaround:** spreadsheets, copy-paste, virtual assistants, scripts, templates, or repeated manual steps.
-4. **Switching:** cancellation, migration, missing feature, pricing complaint, or competitor frustration.
-5. **Timing:** public launch, hiring, expansion, new workflow, regulation, integration, or process change relevant to the product.
+1. **Explicit demand (RU):** «посоветуйте сервис/инструмент», «ищу аналог…», «чем заменить…», «есть ли что-то для…», «нужен инструмент, чтобы…»
+2. **Pain (RU):** «надоело вручную», «трачу часы на…», «бесит», «неудобно», «постоянно ломается», «делаю на коленке»
+3. **Workaround (RU):** «веду в экселе / гугл-таблице», «копипащу вручную», «через бота/скрипт», «наняли фрилансера на рутину», «делаем руками»
+4. **Switching (RU):** «отказался от…», «мигрирую с…», «не хватает функции», «подняли цену», жалобы на конкурента
+5. **Timing (RU):** запуск, найм (вакансии), расширение, новый процесс, регуляторика, интеграция — **и РУ-специфичный триггер ниже**
 
-Adapt wording to the audience's language. Search the original public page and do not qualify from a search snippet alone.
+#### RU timing trigger — импортозамещение (import substitution) ⭐
 
-### Source mix
+The single strongest current RU buying trigger. Search for it explicitly:
 
-Useful public sources include:
+- «зарубежный сервис ушёл из России / заблокировал / перестал принимать оплату»
+- «ищу российский аналог <иностранный инструмент>», «импортозамещение <категория>»
+- «отвалилась оплата зарубежной подписки», «санкции сломали наш стек / процесс»
 
-- forums and public community discussions
-- public social posts and replies
-- product reviews and app marketplace reviews
-- GitHub issues and public feature requests
-- public company pages, job posts, changelogs, or announcements
-- public “looking for a tool” posts and directories
+A company forced off a foreign tool is actively looking **right now** — treat this as high timing and prioritise it.
 
-Avoid private groups, gated communities, data brokers, scraped contact databases, and sources that prohibit access.
+### Source mix (RU platforms first)
+
+Search these Russian public sources before any global one:
+
+- **vc.ru** — статьи, раздел «Трибуна», комментарии
+- **Habr** — статьи, комментарии, Q&A
+- **Telegram** — публичные каналы и чаты (профессиональные сообщества, посты «ищу подрядчика/инструмент»)
+- **VK** — тематические сообщества, обсуждения, комментарии
+- **Пикабу** — тематические посты и комментарии
+- **hh.ru / Хабр Карьера** — вакансии как сигнал найма, роста и внедрения нового процесса
+- **Отзывы** — Otzovik, irecommend, отзывы в 2ГИС и Яндекс.Картах (локальный бизнес), отзывы на маркетплейсах Wildberries/Ozon
+- **Профильные РУ-каталоги** — подборки «сервисы для …», «российские аналоги …»
+- **GitHub** — по-прежнему релевантен для dev-инструментов
+
+Widen to Reddit / X / LinkedIn / ProductHunt / G2 only if the RU assumption is wrong. Note: LinkedIn имеет ограниченный доступ в РФ — не полагайся на него как на основной канал.
+
+Avoid private groups, gated communities, data brokers, scraped contact databases, and sources that prohibit access. Search the original public page and do not qualify from a search snippet alone.
 
 ## Qualification score
 
@@ -49,8 +64,8 @@ Score every dimension from 0 to 5:
 
 - **Pain strength (25%)** — directness, severity, repetition, and cost of the stated problem.
 - **Product fit (25%)** — how directly the startup solves the evidenced job.
-- **Timing (20%)** — freshness and presence of a current trigger.
-- **Public reachability (15%)** — a natural, relevant public or professional contact path exists.
+- **Timing (20%)** — freshness and presence of a current trigger (импортозамещение counts as strong timing).
+- **Public reachability (15%)** — a natural, relevant public or professional contact path exists (Telegram/VC/Habr/VK, публичная почта компании).
 - **Evidence quality (15%)** — specificity, source reliability, and confidence that the signal belongs to the prospect.
 
 Calculate:
@@ -70,25 +85,36 @@ Interpretation:
 - **50–64:** plausible but missing a material signal
 - **Below 50:** do not include in the primary shortlist
 
-An old explicit request can still be relevant, but reduce timing and label the date. A company that merely matches the industry without an evidenced trigger is not a qualified prospect.
+For RU sources without a visible date, reduce timing and label the date as unavailable. A company that merely matches the industry without an evidenced trigger is not a qualified prospect.
 
 ## Prospect stages
 
-- **High intent:** publicly requesting a solution or actively switching.
-- **Problem aware:** clearly describing the pain or expensive workaround.
-- **Trigger present:** a current business event makes the product relevant.
-- **Potential fit:** ICP match with incomplete evidence; keep outside the primary shortlist.
+- **High intent (высокий интент):** publicly requesting a solution or actively switching (в т.ч. ищет российский аналог).
+- **Problem aware (проблема осознана):** clearly describing the pain or expensive workaround.
+- **Trigger present (триггер):** a current business event makes the product relevant.
+- **Potential fit (потенциальный фит):** ICP match with incomplete evidence; keep outside the primary shortlist.
 
-## Outreach rules
+## Privacy and compliance (RU / 152-ФЗ)
+
+- Use only public, intentionally shared **business** information. Handle any personal data consistently with Russian law (152-ФЗ) and platform rules.
+- Do not collect, store, or enrich personal data (личная почта, телефон, домашний адрес, семья). No data brokers, leaked datasets, or scraped contact databases.
+- Do not target or infer sensitive traits (здоровье, финансовые трудности, политические/религиозные взгляды и т.п.).
+- Prefer companies, public professional profiles, and public requests over private individuals.
+
+## Outreach rules (RU)
+
+Recommend the natural RU channel already tied to the source — Telegram (DM или чат), комментарий на vc.ru/Habr, сообщение в VK, публичная почта компании. Do not default to LinkedIn.
+
+Tone — Startend house style: пиши на «Вы», начинай с «привет», честно, без продажных приёмов и без дедлайн-давления. Не изображай близкое знакомство.
 
 Draft one opener using this shape:
 
-1. mention the public context naturally
-2. connect it to the exact problem
-3. explain the product in one sentence
-4. ask one low-friction question
+1. упомяни публичный контекст (их пост/кейс) естественно
+2. свяжи с конкретной болью
+3. объясни продукт одним предложением
+4. задай один необременительный вопрос
 
-Keep it under 90 words by default. Never claim the message was sent. Do not include private emails, phone numbers, personal addresses, family information, or sensitive traits.
+Keep it under 90 words. Never claim the message was sent. Do not include private emails, phone numbers, personal addresses, family information, or sensitive traits.
 
 ## Evidence ledger
 
@@ -96,7 +122,7 @@ For each qualified prospect record:
 
 - displayed company, project, or public professional name
 - source title and URL
-- visible publication date or “date unavailable”
+- visible publication date or «дата неизвестна»
 - source type
 - concise pain or timing signal
 - observed evidence versus inference
