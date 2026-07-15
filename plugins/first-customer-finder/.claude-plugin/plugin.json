@@ -1,0 +1,19 @@
+{
+  "name": "first-customer-finder",
+  "description": "Find and qualify evidence-backed first customers for a startup from public signals, and produce a shareable HTML report. Never sends outreach automatically.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Startend",
+    "url": "https://startend.ru"
+  },
+  "homepage": "https://github.com/Startendru/product-engineer-skills",
+  "license": "MIT",
+  "keywords": [
+    "product-management",
+    "product-engineer",
+    "customer-discovery",
+    "growth",
+    "startup",
+    "claude-code"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "name": "startend",
+  "owner": {
+    "name": "Startend",
+    "url": "https://startend.ru"
+  },
+  "plugins": [
+    {
+      "name": "first-customer-finder",
+      "source": "./plugins/first-customer-finder",
+      "description": "Find and qualify evidence-backed first customers, early adopters, or design partners for a startup from recent public pain and buying signals, and produce a shareable HTML prospecting report. Never sends outreach automatically.",
+      "version": "0.1.0"
+    }
+  ]
+}

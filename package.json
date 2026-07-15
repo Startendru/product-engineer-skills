@@ -1,0 +1,35 @@
+{
+  "name": "@startend/product-engineer-skills",
+  "version": "0.1.0",
+  "description": "Claude Code skills for product engineers who ship with AI. Install a single skill, a kit, or everything via one terminal command — or add it as a native plugin marketplace.",
+  "type": "module",
+  "bin": {
+    "startend-skills": "bin/install.mjs"
+  },
+  "files": [
+    "plugins",
+    "bin",
+    "kits.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT",
+  "author": "Startend (https://startend.ru)",
+  "homepage": "https://github.com/Startendru/product-engineer-skills",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Startendru/product-engineer-skills.git"
+  },
+  "keywords": [
+    "claude-code",
+    "claude-skills",
+    "product-management",
+    "product-engineer",
+    "customer-discovery",
+    "growth",
+    "startup"
+  ]
+}
