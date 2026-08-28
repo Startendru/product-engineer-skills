@@ -14,8 +14,8 @@
     {
       "name": "startend",
       "source": "./plugins/startend",
-      "description": "Umbrella plugin for Startend craft skills, namespaced by domain prefix. Currently ships design-leading-trim: optical trimming of the line box (text-box-trim) for text that sits off-centre inside a block because of font metrics.",
-      "version": "0.1.0"
+      "description": "Umbrella plugin for Startend craft skills, namespaced by domain prefix. Currently ships design-leading-trim: optical trimming of the line box (text-box-trim) for text that sits off-centre inside a block or drifts from the vertical rhythm because of font metrics.",
+      "version": "0.2.0"
     }
   ]
 }
