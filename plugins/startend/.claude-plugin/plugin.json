@@ -1,0 +1,19 @@
+{
+  "name": "startend",
+  "description": "Umbrella plugin for Startend craft skills. Skills are namespaced by domain prefix (design-, growth-, …) and invoked as startend:<skill>.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Startend",
+    "url": "https://startend.ru"
+  },
+  "homepage": "https://github.com/Startendru/product-engineer-skills",
+  "license": "MIT",
+  "keywords": [
+    "claude-code",
+    "product-engineer",
+    "design-systems",
+    "typography",
+    "css",
+    "frontend"
+  ]
+}

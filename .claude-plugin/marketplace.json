@@ -10,6 +10,12 @@
       "source": "./plugins/first-customer-finder",
       "description": "Find and qualify evidence-backed first customers, early adopters, or design partners for a startup from recent public pain and buying signals, and produce a shareable HTML prospecting report. Never sends outreach automatically.",
       "version": "0.1.0"
+    },
+    {
+      "name": "startend",
+      "source": "./plugins/startend",
+      "description": "Umbrella plugin for Startend craft skills, namespaced by domain prefix. Currently ships design-leading-trim: optical trimming of the line box (text-box-trim) for text that sits off-centre inside a block because of font metrics.",
+      "version": "0.1.0"
     }
   ]
 }

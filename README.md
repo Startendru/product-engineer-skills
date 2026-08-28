@@ -13,8 +13,12 @@
 
 ```bash
 claude plugin marketplace add Startendru/product-engineer-skills
-claude plugin install first-customer-finder@startend
+
+claude plugin install first-customer-finder@startend   # growth
+claude plugin install startend@startend                # design и остальной крафт
 ```
+
+Навыки зонтичного плагина вызываются с префиксом: `/startend:design-leading-trim`.
 
 В самой сессии Claude Code то же самое доступно через `/plugin marketplace add …` и `/plugin install …`.
 
@@ -23,9 +27,11 @@ claude plugin install first-customer-finder@startend
 ```bash
 # один навык
 npx github:Startendru/product-engineer-skills first-customer-finder
+npx github:Startendru/product-engineer-skills design-leading-trim
 
 # целый кит
 npx github:Startendru/product-engineer-skills growth
+npx github:Startendru/product-engineer-skills design
 
 # всё сразу
 npx github:Startendru/product-engineer-skills --all
@@ -36,7 +42,9 @@ npx github:Startendru/product-engineer-skills --list
 
 Навык копируется в `~/.claude/skills/`. Флаг `--codex` ставит в `~/.codex/skills/` (для Codex), `--skills-dir PATH` — в произвольную папку.
 
-После установки перезапусти агента и вызови навык — он триггерится сам по описанию или командой `/first-customer-finder`.
+После установки перезапусти агента и вызови навык — он триггерится сам по описанию или командой.
+
+**Разница между путями установки видна в имени навыка.** Плагин держит своё пространство имён: `/startend:design-leading-trim`. Установщик копирует файлы в `~/.claude/skills/`, где пространства имён нет, и навык зовётся `/design-leading-trim`. Работает одинаково, отличается только вызов.
 
 ---
 
@@ -45,12 +53,18 @@ npx github:Startendru/product-engineer-skills --list
 | Навык | Кит | Что делает |
 |---|---|---|
 | **first-customer-finder** | growth | По URL стартапа находит и квалифицирует первых потенциальных клиентов по публичным сигналам боли и спроса, скорит их и собирает HTML-отчёт с персонализированными заготовками для аутрича. Ничего не отправляет автоматически. |
+| **design-leading-trim** | design | Чинит текст, который стоит не по центру блока: вертикальные отступы CSS отмеряются от границ строчного бокса, а не от букв, и величина этого воздуха — свойство гарнитуры. Даёт замер перекоса, `text-box-trim`, правило перенастройки ритма и заслон в CI. |
 
 ### Roadmap (growth-кит)
 
 - `icp-builder` — собрать профиль идеального клиента из продукта/лендинга
 - `signal-scanner` — мониторить публичные сигналы боли/спроса по нише
 - `outreach-writer` — черновики аутрича строго от публичного контекста
+
+### Roadmap (design-кит)
+
+- `design-contrast-audit` — аудит контраста по всем поверхностям, а не только на белом фоне
+- `design-reflow` — проверка вёрстки на 320px без двумерной прокрутки
 
 > Библиотека будет прирастать и другими категориями работы продакт-инженера. Growth — первая.
 
@@ -61,7 +75,7 @@ npx github:Startendru/product-engineer-skills --list
 ```
 product-engineer-skills/
 ├── .claude-plugin/marketplace.json   # каталог плагинов (маркетплейс @startend)
-├── plugins/<plugin>/                 # 1 плагин = 1 навык
+├── plugins/<plugin>/                 # плагин: один навык или зонтик с префиксами
 │   ├── .claude-plugin/plugin.json
 │   └── skills/<skill>/SKILL.md · references/ · scripts/
 ├── kits.json                         # именованные комплекты для установщика
@@ -81,6 +95,7 @@ product-engineer-skills/
 | Первый скоуп | Growth / customer discovery как первый кит под зонтом, а не отдельный узкий репо |
 | Механизм раздачи | Гибрид: нативный плагин-маркетплейс (основной) + npx-установщик (сырой терминал + кросс-харнесс Codex) |
 | Гранулярность | 1 плагин = 1 навык (каждый ставится своей командой); киты — через `kits.json` в установщике |
+| Гранулярность, ревизия 2026-08-28 | Добавлен зонтичный плагин `startend` с префиксами доменов в именах навыков (`design-…`). Заменяет прежнее правило для всего, кроме флагманов: при десятке навыков «одна команда на навык» превращается в десяток команд, а пространство имён плагина даёт `/startend:design-leading-trim` — сразу видно, чьё и про что. `first-customer-finder` остаётся отдельным плагином как флагман со своей страницей установки |
 | Флагман | `first-customer-finder` — основан на MIT-скилле Francesco Mistero (Kappaemme), портирован на Claude Code и адаптирован под РУ (см. [NOTICE](NOTICE)) |
 
 ---
