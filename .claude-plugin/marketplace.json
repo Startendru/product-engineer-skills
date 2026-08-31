@@ -16,6 +16,12 @@
       "source": "./plugins/startend",
       "description": "Umbrella plugin for Startend craft skills, namespaced by domain prefix. Currently ships design-leading-trim: optical trimming of the line box (text-box-trim) for text that sits off-centre inside a block or drifts from the vertical rhythm because of font metrics.",
       "version": "0.2.0"
+    },
+    {
+      "name": "design-system",
+      "source": "./plugins/design-system",
+      "description": "Build and hold a design system: inventory an existing UI, define three-tier tokens, keep a registry of components, patterns and page templates, publish a live showcase and guard it in CI.",
+      "version": "0.1.0"
     }
   ]
 }

@@ -4,5 +4,12 @@
   ],
   "design": [
     "design-leading-trim"
+  ],
+  "design-system": [
+    "inventory",
+    "tokens",
+    "registry",
+    "showcase",
+    "adopt"
   ]
 }
