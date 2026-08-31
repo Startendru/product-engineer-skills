@@ -47,6 +47,17 @@
   целиком — всё должно ронять CI.
 - Статус `ready` **запрещён при доле внедрения ниже 100%**.
 - Каталог паттернов — **29 позиций** в трёх справочниках, ровно по спеке.
+- **Лестница соблюдения.** Проектировать сверху вниз: (1) валидатор артефакта — скилл
+  поставляет скрипт проверки схемы и обязан его прогнать; (2) предусловие — отказ стартовать
+  без входного файла; (3) образец выхода — скелет для заполнения; (4) запреты и красные
+  флаги — **только там, где машинной проверки быть не может**. Если требование проверяется
+  скриптом, оно не живёт в прозе.
+- **Не опираться на силу модели.** Скилл обязан работать на слабой модели. Соблюдение
+  обеспечивает валидатор, а не догадливость агента.
+- **Форма по скиллам:** `inventory`, `tokens`, `registry` — контракт артефакта плюс
+  валидатор. `showcase` и `adopt` — контракт плюс дисциплинарная часть (мутационная
+  проверка заслона и запрет `ready` при доле ниже 100% машинно не проверяются).
+
 
 ---
 
@@ -61,10 +72,12 @@ plugins/design-system/
       SKILL.md
       references/measure-surfaces.md      замер поверхностей и слепые пятна
       references/count-controls.md        как считать системы контролов и вызовы
+      scripts/check-inventory.mjs         валидатор inventory.md
     tokens/
       SKILL.md
       references/token-tiers.md           три яруса, именование, формат DTCG
       references/contrast-matrix.md       матрица «роль × поверхность»
+      scripts/check-tokens.mjs            валидатор tokens.json + пересчёт матрицы
     registry/
       SKILL.md
       references/atomic-levels.md         уровни и как раскладывать
@@ -72,6 +85,7 @@ plugins/design-system/
       references/flows.md                 паттерны 11–22
       references/page-templates.md        паттерны 23–29
       scripts/build-registry-html.mjs     registry.json → registry.html
+      scripts/check-registry.mjs          валидатор registry.json
     showcase/
       SKILL.md
       references/page-scaffold.md         каркас витрины
