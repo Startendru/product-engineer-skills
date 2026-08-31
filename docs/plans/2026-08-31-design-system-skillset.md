@@ -37,6 +37,9 @@
   что он получит.
 - **Ни один артефакт не читают в исходнике.** У `.json` есть html-просмотр.
 - Артефакты целевого проекта — в папке `design-system/` его корня.
+- **Артефакт каждого шага — данные (`.json`), читаемый вид генерируется из них.** Уточнение
+  от 31.08: спека называла выходом `inventory.md`, но следующий скилл должен прочитать
+  список поверхностей программно, а разбор прозы — ровно тот способ, которым числа теряются.
 - Frontmatter: `name` — только строчные буквы, цифры и дефисы. `description` — по образцу
   `plugins/startend/skills/design-leading-trim/SKILL.md`: суть, затем «Использовать при …»
   со списком формулировок пользователя, затем условия применимости. Русский, третье лицо,
@@ -70,9 +73,10 @@ plugins/design-system/
   skills/
     inventory/
       SKILL.md
-      references/measure-surfaces.md      замер поверхностей и слепые пятна
+      references/artifact-schema.md       поля inventory.json и что ловит проверка
       references/count-controls.md        как считать системы контролов и вызовы
-      scripts/check-inventory.mjs         валидатор inventory.md
+      references/measure-surfaces.md      замер поверхностей и слепые пятна
+      scripts/check-inventory.mjs         валидатор inventory.json + генерация inventory.md
     tokens/
       SKILL.md
       references/token-tiers.md           три яруса, именование, формат DTCG
