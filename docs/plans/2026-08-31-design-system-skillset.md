@@ -16,7 +16,7 @@
 **Стек:** Markdown (SKILL.md и справочники), Node.js ESM без зависимостей (скрипты
 генерации html и заслона), Playwright или Chrome DevTools MCP (замеры в браузере).
 
-**Спека:** Traycer-артефакт `2026-08-29-ds-skillset` эпика
+**Спека:** Traycer-артефакт `2026-08-31-ds-skillset` эпика
 `a2d1ace6-97dc-45b5-b5b8-26717f0a6504`. План спорит со спекой — читать оба.
 
 ## Global Constraints
@@ -83,7 +83,7 @@ plugins/design-system/
       references/migration-batches.md     пачки и порядок
 .claude-plugin/marketplace.json           +запись design-system
 kits.json                                 +кит "design-system"
-docs/kanban/2026-08-29-design-system-skillset.md
+docs/kanban/2026-08-31-design-system-skillset.md
 ```
 
 Скрипты — отдельными файлами, потому что это переиспользуемые инструменты, а не пояснения
@@ -99,7 +99,7 @@ docs/kanban/2026-08-29-design-system-skillset.md
 - Create: `plugins/design-system/README.md`
 - Modify: `.claude-plugin/marketplace.json`
 - Modify: `kits.json`
-- Create: `docs/kanban/2026-08-29-design-system-skillset.md`
+- Create: `docs/kanban/2026-08-31-design-system-skillset.md`
 
 **Interfaces:**
 - Produces: плагин `design-system`, видимый маркетплейсом; путь
@@ -173,7 +173,7 @@ diff <(ls plugins/startend/.claude-plugin) <(ls plugins/design-system/.claude-pl
 
 - [ ] **Шаг 7: Завести канбан плана**
 
-`docs/kanban/2026-08-29-design-system-skillset.md` — по одной строке на каждую задачу
+`docs/kanban/2026-08-31-design-system-skillset.md` — по одной строке на каждую задачу
 плана, все со статусом `[ ]`, в шапке ссылка на этот файл и прогресс `0 / 7`.
 
 - [ ] **Шаг 8: Коммит**
@@ -683,7 +683,7 @@ git commit -m "feat(design-system): скилл adopt — миграция пач
 
 **Files:**
 - Modify: `plugins/design-system/README.md` (итоговая таблица цепочки)
-- Create: `docs/plans/2026-08-29-design-system-skillset-results.md` (протокол прогонов)
+- Create: `docs/plans/2026-08-31-design-system-skillset-results.md` (протокол прогонов)
 
 **Interfaces:**
 - Consumes: все пять скиллов.
@@ -707,7 +707,7 @@ git commit -m "feat(design-system): скилл adopt — миграция пач
 
 - [ ] **Шаг 4: Записать протокол**
 
-`docs/plans/2026-08-29-design-system-skillset-results.md`: что прогнали, что получилось,
+`docs/plans/2026-08-31-design-system-skillset-results.md`: что прогнали, что получилось,
 где скиллы пришлось править. Дефекты, найденные здесь, чинятся возвратом в
 соответствующую задачу, а не заплаткой в протоколе.
 
